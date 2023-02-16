@@ -8,3 +8,5 @@ resource "aws_subnet" "main" {
     Name = "Main"
   }
 }
+
+# Count & Element are complementing
