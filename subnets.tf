@@ -9,4 +9,4 @@ resource "aws_subnet" "main" {
   }
 }
 
-# Count & Element are complementing
+# Count & Element are complementing functions; Count tells the number of times the loop has to run & element tells the item to picked from that iteration.
