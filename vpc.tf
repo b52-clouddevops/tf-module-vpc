@@ -1,0 +1,1 @@
+# This creates VPC ; VPC is a regional resource 
