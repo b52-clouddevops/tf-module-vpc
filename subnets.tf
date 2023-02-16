@@ -1,3 +1,4 @@
+# Creates public subnets based on the number of CIDR Supplied in the variable
 resource "aws_subnet" "public-subnet" {
   
   count      = length(var.PUBLIC_SUBNET_CIDR)
