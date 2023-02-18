@@ -27,3 +27,6 @@ resource "aws_route_table" "public-rt" {
 #     Name = "robot-${var.ENV}-private-rt"
 #   }
 # }
+
+
+# Attach the public route table to public-subnets.
