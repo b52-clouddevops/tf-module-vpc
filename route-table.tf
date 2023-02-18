@@ -52,4 +52,4 @@ resource "aws_route_table_association" "private-rt-association" {
   route_table_id = aws_route_table.private-rt.id
 }
 
-# Add 
+# Add peering route in the defaulr VPC Route Table
