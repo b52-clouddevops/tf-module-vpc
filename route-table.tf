@@ -27,7 +27,7 @@ resource "aws_route_table" "private-rt" {
 
   route {
     cidr_block                = var.DEFAULTVPC_CIDR
-    vpc_peering_connection_id = aws_vpc_peering_connection.peering.id"
+    vpc_peering_connection_id = aws_vpc_peering_connection.peering.id
   }
 
   route {
