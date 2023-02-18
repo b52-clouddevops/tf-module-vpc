@@ -53,9 +53,8 @@ resource "aws_route_table_association" "private-rt-association" {
 }
 
 # Add peering route in the defaulr VPC Route Table
-resource "aws_route" "r" {
+resource "aws_route" "peer-route" {
   route_table_id            = "rtb-4fbb3ac4"
   destination_cidr_block    = "10.0.1.0/22"
   vpc_peering_connection_id = "pcx-45ff3dc1"
-  depends_on                = [aws_route_table.testing]
 }
