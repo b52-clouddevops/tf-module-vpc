@@ -1,7 +1,8 @@
 # Creates NAT Gateway 
 
 resource "aws_nat_gateway" "ngw" {
-    
+  allocation_id = aws_eip.example.id
+  subnet_id     = aws_subnet.example.id
 
   tags = {
     Name = "robot-${var.ENV}-ngw"
