@@ -1,6 +1,6 @@
 # Creating Public Route Table
 
-resource "aws_route_table" "public-rtmple" {
+resource "aws_route_table" "public-rt" {
   vpc_id = aws_vpc.main.id
 
   route {
@@ -15,7 +15,7 @@ resource "aws_route_table" "public-rtmple" {
 
 # Creating Private Route Table
 
-resource "aws_route_table" "exapublic-rtmple" {
+resource "aws_route_table" "private-rt" {
   vpc_id = aws_vpc.main.id
 
   route {
