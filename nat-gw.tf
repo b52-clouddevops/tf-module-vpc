@@ -1,7 +1,10 @@
 # Provisions Elastic IP Needed for Nat Gateway 
 resource "aws_eip" "ngw-eip" {
   vpc      = true
-  
+
+  tags {
+    
+  }
 }
 
 
