@@ -5,5 +5,8 @@ resource "aws_vpc_peering_connection" "peering" {
   vpc_id        = var.DEFAULT_VPC_CIDR
   auto_accept   = true
 
-  
+  tags = {
+    Name = "VPC Peering between foo and bar"
+  }
+
 }
