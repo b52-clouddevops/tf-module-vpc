@@ -1,6 +1,6 @@
 # Creating Public Route Table
 
-resource "aws_route_table" "exapublic-rtmple" {
+resource "aws_route_table" "public-rtmple" {
   vpc_id = aws_vpc.main.id
 
   route {
