@@ -11,7 +11,7 @@ resource "aws_eip" "ngw-eip" {
 
 # Creates NAT Gateway 
 resource "aws_nat_gateway" "ngw" {
-  allocation_id = aws_eip.example.id
+  allocation_id = aws_eip.ngw-eip
   subnet_id     = aws_subnet.example.id
 
   tags = {
