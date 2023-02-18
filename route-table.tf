@@ -30,7 +30,7 @@ resource "aws_route_table" "public-rt" {
 
 
 # Attach the public route table to public-subnets.
-resource "aws_route_table_association" "a" {
+resource "aws_route_table_association" "public-rt-association" {
   subnet_id      = aws_subnet.foo.id
   route_table_id = aws_route_table.bar.id
 }
