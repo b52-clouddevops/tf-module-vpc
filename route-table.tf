@@ -22,9 +22,7 @@ resource "aws_route_table_association" "public-rt-association" {
 
 # Creating Private Route Table
 
-# Creating Public Route Table
-
-resource "aws_route_table" "public-rt" {
+resource "aws_route_table" "private-rt" {
   vpc_id = aws_vpc.main.id
 
   route {
