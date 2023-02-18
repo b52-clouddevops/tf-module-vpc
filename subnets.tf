@@ -23,6 +23,3 @@ resource "aws_subnet" "private-subnet" {
     Name = "robot-private-subnet-${element(var.AZ, count.index)}"
   }
 }
-
-
-count = length(aws_subnet.public-subnet.*.id)
