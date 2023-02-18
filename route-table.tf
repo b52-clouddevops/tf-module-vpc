@@ -55,6 +55,6 @@ resource "aws_route_table_association" "private-rt-association" {
 # Add peering route in the defaulr VPC Route Table
 resource "aws_route" "peer-route" {
   route_table_id            = var.DEFAULT_VPC_RT
-  destination_cidr_block    = "10.0.1.0/22"
+  destination_cidr_block    = var.VPC_CIDR
   vpc_peering_connection_id = "pcx-45ff3dc1"
 }
