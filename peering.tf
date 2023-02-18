@@ -10,4 +10,3 @@ resource "aws_vpc_peering_connection" "peering" {
   }
 }
 
-aws_vpc_peering_connection.
