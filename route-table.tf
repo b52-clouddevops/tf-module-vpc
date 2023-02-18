@@ -24,6 +24,6 @@ resource "aws_route_table" "private-rt" {
   }
 
   tags = {
-    Name = "robot-${var.ENV}-public-rt"
+    Name = "robot-${var.ENV}-private-rt"
   }
 }
