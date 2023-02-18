@@ -9,3 +9,5 @@ resource "aws_vpc_peering_connection" "peering" {
     Name = "robot-${var.ENV}-default-vpc-peering"
   }
 }
+
+aws_vpc_peering_connection.
