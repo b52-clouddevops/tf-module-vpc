@@ -26,7 +26,7 @@ resource "aws_route_table" "private-rt" {
   vpc_id = aws_vpc.main.id
 
   route {
-    cidr_block = var.VPC_CIDR
+    cidr_block = var.DEFAULTVPC_CIDR
     gateway_id = aws_internet_gateway.igw.id
   }
 
