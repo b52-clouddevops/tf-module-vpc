@@ -25,4 +25,4 @@ resource "aws_subnet" "private-subnet" {
 }
 
 
-count = lenth
+count = length(aws_subnet.)
