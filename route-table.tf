@@ -30,6 +30,11 @@ resource "aws_route_table" "private-rt" {
     gateway_id = aws_internet_gateway.igw.id
   }
 
+  route {
+    cidr_block = var.VPC_CIDR
+    gateway_id = aws_internet_gateway.igw.id
+  }
+
   tags = {
     Name = "robot-${var.ENV}-public-rt"
   }
