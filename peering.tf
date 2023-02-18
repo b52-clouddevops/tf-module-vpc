@@ -6,7 +6,7 @@ resource "aws_vpc_peering_connection" "peering" {
   auto_accept   = true
 
   tags = {
-    Name = "robot-${var.ENV}-"
+    Name = "robot-${var.ENV}-default-vpc-peering"
   }
 
 }
