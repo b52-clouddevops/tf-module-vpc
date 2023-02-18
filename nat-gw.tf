@@ -5,7 +5,7 @@ resource "aws_nat_gateway" "ngw" {
   subnet_id     = aws_subnet.example.id
 
   tags = {
-    Name = ""
+    Name = "robot-${var.ENV}-ngw"
   }
 
   # To ensure proper ordering, it is recommended to add an explicit dependency
