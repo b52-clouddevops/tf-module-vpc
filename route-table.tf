@@ -17,7 +17,7 @@ resource "aws_route_table" "public-rt" {
 resource "aws_route_table_association" "public-rt-association" {
   count          = length(aws_subnet.public-subnet.*.id)
   subnet_id      = element(aws_subnet.public-subnet.*.id, count.index)
-  route_table_id = aws_route_table.bar.id
+  route_table_id = aws_route_table.public-rt.id
 }
 
 # Creating Private Route Table
