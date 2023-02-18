@@ -3,7 +3,7 @@ resource "aws_eip" "ngw-eip" {
   vpc      = true
 
   tags {
-     Name   = "robot-"
+     Name   = "robot-${var.ENV}-ngw-ip"
   }
 }
 
