@@ -1,3 +1,11 @@
+# Provisions Elastic IP Needed for Nat Gateway 
+resource "aws_eip" "lb" {
+  instance = aws_instance.web.id
+  vpc      = true
+}
+
+
+
 # Creates NAT Gateway 
 resource "aws_nat_gateway" "ngw" {
   allocation_id = aws_eip.example.id
