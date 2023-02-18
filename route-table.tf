@@ -15,8 +15,8 @@ resource "aws_route_table" "public-rt" {
 
 # Attach the public route table to public-subnets.
 resource "aws_route_table_association" "public-rt-association" {
-  count           
-  subnet_id      = count = length(aws_subnet.public-subnet.*.id)
+  count          = length(aws_subnet.public-subnet.*.id)
+  subnet_id      = count = 
   route_table_id = aws_route_table.bar.id
 }
 
