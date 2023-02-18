@@ -9,6 +9,6 @@ resource "aws_route_table" "exapublic-rtmple" {
   }
 
   tags = {
-    Name = "robot"
+    Name = "robot-public-"
   }
 }
