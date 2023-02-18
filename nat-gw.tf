@@ -1,7 +1,7 @@
 # Provisions Elastic IP Needed for Nat Gateway 
-resource "aws_eip" "lb" {
-  instance = aws_instance.web.id
+resource "aws_eip" "ngw-eip" {
   vpc      = true
+  
 }
 
 
