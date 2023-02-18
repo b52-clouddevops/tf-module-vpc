@@ -8,12 +8,7 @@ resource "aws_route_table" "exapublic-rtmple" {
     gateway_id = aws_internet_gateway.igw.id
   }
 
-  route {
-    ipv6_cidr_block        = "::/0"
-    egress_only_gateway_id = aws_egress_only_internet_gateway.example.id
-  }
-
   tags = {
-    Name = "example"
+    Name = "robot"
   }
 }
