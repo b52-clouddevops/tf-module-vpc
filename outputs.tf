@@ -1,3 +1,3 @@
 output "VPC_ID" {
-    value = 
+    value = aws_vpc.main.id 
 }
