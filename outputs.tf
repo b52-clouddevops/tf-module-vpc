@@ -3,5 +3,5 @@ output "VPC_ID" {
 }
 
 output "VPC_CIDR" {
-    value = aws_vpc.main.id 
+    value = aws_vpc.main.
 }
