@@ -23,5 +23,5 @@ output "PUBLIC_SUBNET_CIDR" {
 }
 
 output "DEFAULT_VPC_CIDR" {
-    value = aws_vpc.main.cidr_block
+    value = var.DEFAULT_VPC_CIDR
 }
