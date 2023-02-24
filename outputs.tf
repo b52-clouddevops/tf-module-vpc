@@ -38,6 +38,9 @@ output "PUBLIC_HOSTEDZONE_ID" {
     value = var.PUBLIC_HOSTEDZONE_ID
 }
 
+
+ 
+
 variable "PRIVATE_HOSTEDZONE_ID" {}
 variable "PUBLIC_HOSTEDZONE_ID" {}
 variable "PRIVATE_HOSTEDZONE_NAME" {}
