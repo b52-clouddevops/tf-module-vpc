@@ -30,7 +30,13 @@ output "DEFAULT_VPC_ID" {
     value = var.DEFAULT_VPC_ID
 }
 
+output "PRIVATE_HOSTEDZONE_ID" {
+    value =  var.PRIVATE_HOSTEDZONE_ID
+}
 
+output "PUBLIC_HOSTEDZONE_ID" {
+
+}
 
 variable "PRIVATE_HOSTEDZONE_ID" {}
 variable "PUBLIC_HOSTEDZONE_ID" {}
