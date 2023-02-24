@@ -8,3 +8,6 @@ variable "ENV" {}
 variable "PUBLIC_SUBNET_CIDR" {}
 variable "PRIVATE_SUBNET_CIDR" {}
 variable "AZ" {}
+
+PRIVATE_HOSTEDZONE_NAME = "roboshop.internal"
+PUBLIC_HOSTEDZONE_NAME = "robos-shop.online"
