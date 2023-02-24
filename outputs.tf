@@ -46,8 +46,3 @@ output "PUBLIC_HOSTEDZONE_NAME" {
     value = var.PUBLIC_HOSTEDZONE_NAME
 }
  
-
-variable "PRIVATE_HOSTEDZONE_ID" {}
-variable "PUBLIC_HOSTEDZONE_ID" {}
-variable "PRIVATE_HOSTEDZONE_NAME" {}
-variable "PUBLIC_HOSTEDZONE_NAME" {}
